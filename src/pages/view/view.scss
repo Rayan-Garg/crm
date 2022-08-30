@@ -1,0 +1,70 @@
+.view{
+    display: flex;
+    width: 100%;
+    .viewContainer{
+        flex:6;
+    }
+}
+.products{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.headings{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 45px;
+
+}
+
+.card{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.2rem;
+    min-width: 28rem;
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 45px;
+    width: 45%;
+
+    &__img{
+        width:14rem;
+        height:11rem;
+        object-fit: cover;
+    }
+
+    &__body{
+        margin: 1rem;
+    }
+
+    &__title{
+        line-height: 1.4rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    &__description{
+        line-height: 1.2rem;
+    }
+
+    &__price{
+        font-size: 1.4rem;
+        margin-top: 0.6rem;
+
+        &::before{
+            content: "$";
+            font-size: 1rem;
+            top: 0.3rem;
+            padding-right: 0.1rem;
+        }
+    }
+
+    &__btn{
+        border: 80%;
+        margin-top: 0.8rem;
+    }
+}
