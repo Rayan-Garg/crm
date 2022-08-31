@@ -19,8 +19,8 @@ export default function View(){
     const checkoutOptions = {
         lineItems: [{price: "price_1LcDS7CKlauyNafFlaX7o19J", quantity: 1}],
         mode: "payment",
-        successUrl: "https://ray-crm.netlify.app/view",
-        cancelUrl: "https://ray-crm.netlify.app/view",
+        successUrl: "https://ray-crm.netlify.app/",
+        cancelUrl: "https://ray-crm.netlify.app/",
     }
 
     const redirectToCheckout1 = async () => {
