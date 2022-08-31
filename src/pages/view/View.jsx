@@ -11,7 +11,7 @@ export default function View(){
 
     const getStripe = () => {
         if(!stripePromise){
-            stripePromise = loadStripe("pk_test_51LcDOHCKlauyNafF7IB2l3GzumDrxYsCeH8Pa7mF68EfZGRpWyvFZZiXZ3J5owkph1ZZyA55YMwv4Mg0UqDtwlJX00injxiS0N");
+            stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_KEY}`);
         }
         return stripePromise;
     }
@@ -19,8 +19,8 @@ export default function View(){
     const checkoutOptions = {
         lineItems: [{price: "price_1LcDS7CKlauyNafFlaX7o19J", quantity: 1}],
         mode: "payment",
-        successUrl: "http://localhost:3000/view",
-        cancelUrl: "http://localhost:3000/view",
+        successUrl: "https://ray-crm.netlify.app/view",
+        cancelUrl: "https://ray-crm.netlify.app/view",
     }
 
     const redirectToCheckout1 = async () => {
