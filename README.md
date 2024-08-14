@@ -1,4 +1,4 @@
-To see this site live, visit: https://ray-crm.netlify.app/
+I created an admin dashboard with an integration to Stripe. To see this site live, visit: https://ray-crm.netlify.app/
 
 # Getting Started with Create React App
 
